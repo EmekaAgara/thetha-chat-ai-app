@@ -8,17 +8,17 @@ import {
   Dimensions,
 } from "react-native";
 import { Video, ResizeMode } from "expo-av";
-// import SlidingTexts from "@/components/SlidingTexts";
 import { Link, Slot, useNavigation, useRouter } from "expo-router";
 import SlidingText from "../components/SlidingText";
-
 const { height: deviceHeight } = Dimensions.get("window");
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
+  <StatusBar hidden={true} />;
   const router = useRouter();
 
   const onConnectPressed = () => {
-    router.push({ pathname: "home" });
+    router.push({ pathname: "chat" });
 
     // navigation.navigate("SignupScreen");
   };

@@ -5,6 +5,7 @@ export default function Layout() {
     <Stack
       screenOptions={{
         headerShown: false,
+        // statusBarHidden={true}
       }}
     >
       {/* Optionally configure static options outside the route.*/}
